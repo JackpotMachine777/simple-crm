@@ -23,11 +23,13 @@ A simple CRM project with an admin panel to view and manage user-submitted conta
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone <repo-url>
-   cd simple-crm
+  ```bash
+  git clone <repo-url>
+  cd simple-crm
   ```
+
 ---
+
 2. Install frontend and backend dependencies:
   ```bash
     npm install
@@ -37,17 +39,23 @@ A simple CRM project with an admin panel to view and manage user-submitted conta
   ```bash
     MONGO_URL=mongodb://127.0.0.1:27017/CRM-Database
   ```
+
 ---
+
 4. Run the backend:
   ```bash
     npm run server
   ```
+
 ---
+
 5. Run the frontend:
   ```bash
     npm start
   ```
+
 ---
+
 ## Usage
 - Open http://localhost:5173 in your browser to see the frontend
 - Log in as an admin to access the form management panel
