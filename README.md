@@ -24,7 +24,7 @@ A simple CRM project with an admin panel to view and manage user-submitted conta
 
 1. Clone the repository:
   ```bash
-  git clone <repo-url>
+  git clone https://github.com/JackpotMachine777/simple-crm.git
   cd simple-crm
   ```
 
