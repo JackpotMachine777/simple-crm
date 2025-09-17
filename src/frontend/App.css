@@ -1,0 +1,447 @@
+*{
+    box-sizing: border-box;
+}
+
+html, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body{
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 25px 0 0;
+    padding: 0 2rem;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+header ul li{
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    background-color: #00d4ff;
+    color: black;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+header ul li:hover{
+    background-color: #005eff;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.admin-header{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 0 2rem;
+}
+
+.admin-header ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.admin-header ul li{
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    background-color: #00d4ff;
+    color: black;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+}
+.admin-header ul li:hover{
+    background-color: #005eff;
+}
+
+.admin-header ul li a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+#banner {
+    padding: 6rem 2rem;
+    text-align: center;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    color: #222;
+}
+
+#banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#about{
+    background-color: rgba(255, 255, 255, 0.500);
+    text-align: center;
+}
+
+#services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+    border-radius: 16px;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+#contact-form {
+    padding: 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    font-size: 1rem;
+}
+
+#admin-login{
+    padding: 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    font-size: 1rem;
+}
+
+#admin-login input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    background-color: #ffffffcc;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+    color: black;
+}
+
+#contact-form h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #222;
+}
+
+#contact-form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    background-color: #ffffffcc;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+    color: black;
+}
+
+#loginBtn{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #005eff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+#loginBtn:hover { background-color: #003fcc; }
+
+#contact-form button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #005eff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #003fcc;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 25px 25px;
+    padding: 2rem;
+    font-size: 1rem;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.05);
+}
+
+#footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#footer-left,
+#footer-center,
+#footer-right {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 100px;
+}
+
+#footer-left {
+    text-align: left;
+    flex: 1;
+    min-width: 200px;
+}
+
+#footer-center {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+#footer-right {
+    text-align: right;
+    flex: 1;
+    min-width: 200px;
+}
+
+footer h2, footer h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+footer h5 {
+    margin: 0.5rem 0 1rem;
+}
+
+footer a img {
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    transition: transform 0.3s;
+}
+
+footer a:hover img {
+    transform: scale(1.2);
+}
+
+#footer-right a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#footer-right a:hover {
+    color: cyan;
+}
+
+#scrollBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid cyan;
+    color: cyan;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+#scrollBtn:hover {
+    background: cyan;
+    color: black;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 1rem;
+    }
+
+    header ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #services {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    #footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer-left,
+    #footer-center,
+    #footer-right {
+        margin: 0;
+    }
+
+    #footer-left,
+    #footer-right {
+        text-align: center;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    #banner h1 {
+        font-size: 2rem;
+    }
+
+    header ul li {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+
+    #contact-form {
+        padding: 2rem 1rem;
+    }
+
+    #contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    #contact-form button {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    #scrollBtn {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+}
+
+/* 4K Resolution Screens */
+@media (min-width: 1921px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    #banner h1 {
+        font-size: 4rem;
+    }
+
+    #banner img{
+        width: 550px;
+        height: 550px;
+    }
+
+    #services {
+        max-width: 2200px;
+        padding: 4rem 6rem;
+        gap: 3rem;
+    }
+
+    .service-card {
+        padding: 3rem;
+        font-size: 1.5rem;
+    }
+
+    #contact-form {
+        max-width: 900px;
+        padding: 5rem;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 1.1rem;
+        padding: 3rem;
+    }
+
+    header {
+        height: 120px;
+        padding: 0 4rem;
+    }
+
+    header ul li {
+        font-size: 2rem;
+        padding: 0.75rem 2rem;
+        border-radius: 24px;
+    }
+}

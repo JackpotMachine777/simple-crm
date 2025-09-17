@@ -1,0 +1,140 @@
+.admin-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    font-family: 'Inter', sans-serif;
+}
+
+.admin-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #222;
+    font-weight: bold;
+}
+
+#tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#tools label {
+    font-weight: 600;
+}
+
+.search-input,
+#sortSelect {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    background-color: #ffffffcc;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.1);
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+
+.search-input:focus,
+#sortSelect:focus {
+    box-shadow: 0 0 0 2px #00d4ff;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #005eff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #003fcc;
+}
+
+.forms-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.forms-table th,
+.forms-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.forms-table th {
+    background-color: rgba(0, 212, 255, 0.3);
+    font-weight: 600;
+    color: #222;
+}
+
+.forms-table tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.forms-table tr:hover {
+    background-color: rgba(0, 212, 255, 0.15);
+}
+
+.forms-table td button {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.forms-table td button:first-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.forms-table td button:first-child:hover {
+    background-color: #b02a37;
+}
+
+.forms-table td button:last-child {
+    background-color: #28a745;
+    color: white;
+}
+
+.forms-table td button:last-child:hover {
+    background-color: #1e7e34;
+}
+
+.unread td {
+    font-weight: bold;
+    background-color: rgba(255, 255, 0, 0.1);
+    transition: background-color 0.3s, font-weight 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    #tools {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .forms-table th,
+    .forms-table td {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+}

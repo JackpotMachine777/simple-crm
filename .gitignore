@@ -1,0 +1,39 @@
+# Node modules
+/node_modules/
+
+# Build outputs
+/dist/
+/vite-env.d.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# TypeScript build outputs
+*.tsbuildinfo
+
+# Frontend specific
+/public/assets/
+*.css.map
+*.js.map
+
+# Optional: coverage for tests
+coverage/
