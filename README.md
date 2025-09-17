@@ -1,26 +1,26 @@
-# Simple CRM
+# Simple CRM 📝
 
 A simple CRM project with an admin panel to view and manage user-submitted contact forms.
 
-## Stack
+## Stack 🛠️
 
-- **Frontend:** React + TypeScript + CSS
-- **Backend:** Node.js + Express + TypeScript
-- **Database:** MongoDB
-- **Admin passwords:** hashed with bcrypt
+- **Frontend:** React ⚛️ + TypeScript 🟦 + CSS 🎨
+- **Backend:** Node.js 🟢 + Express 🚂 + TypeScript 🟦
+- **Database:** MongoDB 🍃
+- **Admin passwords:** hashed with bcrypt 🔒
 
-## Features
+## Features ✨
 
-- Admin panel:
-  - View forms submitted by users
-  - Delete submissions
-  - Mark submissions as read
-  - Sort forms by date (newest/oldest)
-  - Search forms by email address
-- User contact form
-- Simple admin login system
+- Admin panel 🖥️:
+  - View forms submitted by users 📄
+  - Delete submissions ❌
+  - Mark submissions as read ✅
+  - Sort forms by date (newest/oldest) 📅
+  - Search forms by email address 🔍
+- User contact form 📨
+- Simple admin login system 🔑
 
-## Installation
+## Installation 🚀
 
 1. Clone the repository:
   ```bash
@@ -56,6 +56,6 @@ A simple CRM project with an admin panel to view and manage user-submitted conta
 
 ---
 
-## Usage
-- Open http://localhost:5173 in your browser to see the frontend
-- Log in as an admin to access the form management panel
+## Usage 💻
+- Open http://localhost:5173 in your browser to see the frontend 🌐
+- Log in as an admin to access the form management panel 🔑
